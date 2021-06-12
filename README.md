@@ -1,4 +1,4 @@
-# 02 Advanced CSS: Portfolio
+# This is My Portfolio
 ## Deployed @ https://while-alive.github.io/Portfolio/
 
 Welcome to this week's Challenge! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
@@ -39,7 +39,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./02-Challenge/Assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](./02-Challenge/assets/02-advanced-css-homework-demo.gif)
 
 ## Review
 
