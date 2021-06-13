@@ -27,6 +27,7 @@
       <a href="/">Jeff Timson</a>
     </h1>
 
+    <!-- START NAV BAR -->
     <div class="navbar">
       <nav>
         <ul>
@@ -44,29 +45,49 @@
         <ul>
           <li class="right">
             <a href="#contact-me">
-              <h3>Contact Me</h3>
+              <h3>Contact</h3>
             </a>
           </li>
           <li class="right">
             <a href="https://www.linkedin.com/in/jeff-timson/" target="_blank">
               <h3>LinkedIn</h3>
+              <!--Consider removing this from navbar-->
             </a>
           </li>
         </ul>
       </nav>
     </div>
+    <!-- END NAV BAR -->
   </header>
 
+  <!-- START HERO -->
   <section class="hero">
     <div class="banner">
       <div class="image" title="looks like a goober">
         <img src="./assets/images/selfie.jpg">
       </div>
 
-      <div id="date_El"></div>
-      <h2>Portfolio</h2>
+      <div class="centerfold">
+        <h2>Portfolio</h2>
+        <div id="date"></div>
+      </div>
+
+      <div class="clock">
+        <div class="face">
+          <div class="second">
+            <div class="second-hand"></div>
+          </div>
+          <div class="minute">
+            <div class="minute-hand"></div>
+          </div>
+          <div class="hour">
+            <div class="hour-hand"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- END HERO -->
 
   <section class="content">
 
@@ -79,13 +100,24 @@
         </div>
       </div>
       <div class="tail">
-        <p>My name is Jeff</p>
-        <p>...</p>
-        <p>I have no projects</p>
-        <p>...</p>
+        <p>
+          <b>Hello, my name is Jeff.</b>
+          <br><br>
+          I love to create.
+          <br><br>
+          I have dabbled with C and Python and I am currently learning to become a fullstack web developer.
+          <br><br>
+          <b>Welcome to my new portfolio page!</b>
+          <br><br>
+          <span class="sob-story">My HTML and CSS skills are not yet at the level where I can create freely and meet my
+            aesthetic taste. <br> I am still figuring things out, so please watch your step.</span>
+          <br><br>
+          <b>This site is under construction!</b>
+          <br><br>
+        </p>
+        <br><br>
         <div class="under_construction"><img
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Ambox_warning_blue_construction.svg"
-            width="80px"><br>UNDER CONSTRUCTION</p>
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Ambox_warning_blue_construction.svg" width="80px">
         </div>
       </div>
     </div>
@@ -100,9 +132,11 @@
         </div>
       </div>
       <div class="tail">
-        <a class="projects" href="./coming_soon.html" style="background-image: url(https://picsum.photos/2000/601)"
+        <a class="projects" href="https://while-alive.github.io/Mars-Forecast/" style="background-image: url()"
           target="_blank">
-          <h3>Project 1</h3>
+          <h3>Mars Weather</h3>
+          <iframe class="projects" src="https://while-alive.github.io/Mars-Forecast/" scrolling="none"
+            allowtransparency="true" name="main" frameborder="0"></iframe>
         </a>
         <a class="projects" href="./coming_soon.html" style="background-image: url(https://picsum.photos/1000/600)"
           target="_blank">
@@ -127,7 +161,7 @@
       <div class="head">
         <div class="banner">
           <span>
-            <h4>Contact Me</h4>
+            <h4>Contact</h4>
           </span>
         </div>
       </div>
@@ -150,27 +184,32 @@
 </body>
 
 <script>
-  // window.addEventListener('scroll', () => {
-  //   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-  // }, false);
-
-  var date_El = document.getElementById("date_El")
+  // ELEMENTS
+  var dateEl = document.getElementById("date")
+  var hourEl = document.querySelector(".hour");
+  var minuteEl = document.querySelector(".minute");
+  var secondEl = document.querySelector(".second");
 
   setInterval(function () {
     var date = (new Date).toString().substr(0, 16);
-    
     var time = new Date();
+    var hour = time.getHours()
+    var minute = time.getMinutes()
+    var second = time.getSeconds()
+    console.log(">>>" + hour + ":" + minute + ":" + second)
 
-    if (time.getHours() <= 12){
-      time = time.toString().substr(16, 8);
-      date_El.textContent = date + "\r\n" + time;
-      date_El.textContent += " AM";
-    }else {
-      time = new Date(time - 43200000).toString().substr(16, 8);
-      date_El.textContent = date + "\r\n" + time;
-      date_El.textContent += " PM";
-    }
+    dateEl.textContent = date;
+
+    // INCLUDE AM PM in the center of the clock
+
+    // UPDATE THE CLOCK
+    // Every second the second hand moves
+    secondEl.style.transform = "rotate("+(second/60*360)+"deg)";
+    minuteEl.style.transform = "rotate("+(minute/60*360)+"deg)";
+    // I love how degrees work
+    hourEl.style.transform = "rotate("+(hour/12*360)+"deg)";
   }, 1000)
+
 </script>
 
 </html>
