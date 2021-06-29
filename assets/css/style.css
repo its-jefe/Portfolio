@@ -58,6 +58,12 @@ header h1 a:active {
 .content .tail .projects:active {
   background-color:rgba(245, 245, 245, 0) !important;
 }
+.content .tail .projects:hover h3,
+.content .tail .projects:active h3{
+  background-clip: text;
+  /* color:rgb(138, 243, 255, 0); */
+  z-index: -6;
+}
 /* INTERACTION */
 /***END***/
 
@@ -185,7 +191,7 @@ header h1{
   border-radius: 50%;
   width: 15vw;
   height: 15vw;
-  border: solid 1vw rgba(146, 221, 255, 0.42);
+  border: inset 1vw rgba(146, 221, 255, 0.42);
 }
 .hero img {
   width: 40vw;
@@ -336,18 +342,19 @@ header h1{
   width: 100%;
   height: 100%;
   z-index: -5;
+  top: -27%;
 }
 
 .content .tail .projects {
-  display: table;
+  /* display: table; */
   width: 49%;
   height: 20vmax;
   margin-bottom: 2vmax;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:rgba(245, 245, 245, 0.363);
-  background-blend-mode: difference;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-blend-mode: color-burn ;
   border-top: none;
   transition: background-color 0.4s ease-in-out;
 }
@@ -368,6 +375,7 @@ header h1{
   border-right: none;
   background-clip: content-box;
   text-align: center;
+  position: relative;
 }
 .content .tail div{
   flex-basis: 100%;
