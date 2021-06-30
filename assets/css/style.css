@@ -87,12 +87,6 @@ p {
   width: 100%;
   text-align: center;
 }
-ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  width: fit-content;
-}
 a{
   text-decoration: none;
 }
@@ -153,6 +147,12 @@ header h1{
 .navbar nav :not(:last-of-type){
   margin-right: .5vmax;
 }
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: fit-content;
+}
 .navbar li {
   box-shadow: 0vmax 0vmax .3vmax .15vmax rgba(0, 0, 0, 0.5);
   width: fit-content;
@@ -211,6 +211,7 @@ header h1{
   padding: 0.5vw 3vw;
   width: 100%;
 }
+
 #date{
   width: max-content;
   font-family: initial;
@@ -220,6 +221,7 @@ header h1{
   color: rgb(146, 221, 255);
   text-shadow: 0 0 3px black;
 }
+
 .clock {
   display: flex;
   justify-content: center;
@@ -335,6 +337,12 @@ header h1{
   width: 90%;
   padding: 2vmax;
   box-shadow: inset 0vmax 0vmax .25vmax .25vmax rgba(47, 47, 47, 0.2);
+}
+
+.content .tail .about-me-list {
+  margin: auto;
+  position: relative;
+  /* left: 0; */
 }
 
 .content .tail iframe {
