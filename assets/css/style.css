@@ -169,7 +169,7 @@ header h1 {
   right: 2rem;
   z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
-  /* background-image: linear-gradient(rgb(61, 61, 61),   rgb(97, 97, 97)); */
+  background-image: linear-gradient(rgb(61, 61, 61),rgb(97, 97, 97));
   /* CONSIDER MAKING THIS THING SOLID */
   box-shadow: 0vmax 0.1vmax 0.3vmax 0.2vmax rgba(0, 0, 0, 0.363);
   border: outset 2px rgba(0, 0, 0, 0.103);
@@ -216,22 +216,21 @@ header h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 7rem;
+  padding: 1rem 7rem 0rem 7rem;
 }
 .hero .image {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  border-radius: 50%;
-  width: 15vw;
-  height: 15vw;
-  border: inset 1vw rgba(146, 221, 255, 0.42);
+  /* overflow: hidden; */
+  /* border-radius: 50%; */
+  height: 100%;
+  /* border: inset 1vw rgba(146, 221, 255, 0.42); */
 }
 .hero img {
-  width: 40vw;
+  width: 25vw;
   height: auto;
-  align-self: center;
+  align-self: flex-end;
 }
 .centerfold {
   display: flex;
@@ -260,11 +259,13 @@ header h1 {
 .clock {
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
   background-color: black;
   border-radius: 50%;
   height: 15vw;
   width: 15vw;
+  margin-bottom: 1rem;
 }
 .face {
   display: flex;
@@ -288,7 +289,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  height: 0.1vw;
+  height: 0.1vw; /* proud of this */
   width: 1vw;
   overflow: visible;
 }
