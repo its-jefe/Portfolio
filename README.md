@@ -4,7 +4,7 @@
 
 Deployed @ https://its-jefe.github.io/Portfolio/
 
-[UCF Coding Boot Camp][1] [Week 2 Challenge][2]
+[UCF Coding Boot Camp][1] : [Week 2 Challenge][2]
 
 <!---
 
