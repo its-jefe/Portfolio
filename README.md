@@ -4,7 +4,7 @@
 
 Deployed @ https://its-jefe.github.io/Portfolio/
 
-[UCF Coding Boot Camp Week 2 Challenge][1]
+[UCF Coding Boot Camp][1] [Week 2 Challenge][2]
 
 <!---
 
@@ -60,5 +60,5 @@ You are required to submit BOTH of the following for review:
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
 -->
-
-[1]:https://github.com/UCF-Coding-Boot-Camp/UCF-VIRT-BO-FSF-PT-04-2021-U-B/tree/main/02-Advanced-CSS/02-Challenge
+[1]:https://bootcamp.ce.ucf.edu/coding/
+[2]:https://github.com/UCF-Coding-Boot-Camp/UCF-VIRT-BO-FSF-PT-04-2021-U-B/tree/main/02-Advanced-CSS/02-Challenge
