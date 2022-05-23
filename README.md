@@ -9,8 +9,7 @@
 
 ---
 
-## Now on [Firebase][3] [🔥][3]
-jeff-timson.dev 😎 🫠
+## Now on [Firebase][3] [🔥][3] [🫠][0] [😎][3]
 
 ---
 
@@ -21,3 +20,5 @@ jeff-timson.dev 😎 🫠
 [1]:https://bootcamp.ce.ucf.edu/coding/
 [2]:https://github.com/UCF-Coding-Boot-Camp/UCF-VIRT-BO-FSF-PT-04-2021-U-B/tree/main/02-Advanced-CSS/02-Challenge
 [3]:https://jeff-timson.dev
+
+[0]:https://its-jefe.github.io/Portfolio
